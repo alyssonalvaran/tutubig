@@ -42,9 +42,17 @@
     </div>
     <div id="section4" class="container-fluid bg-light section">
         <h1>Who We Are</h1>
-        <p>
-            Lorem ipsum keme keme keme 48 years shongaers na ang antibiotic intonses na ang thunder at biway keme keme waz nang tanders tungril conalei nakakalurky lulu jowabella oblation ng boyband tamalis krang-krang na ang , at ganders bokot bella Cholo na nang shonga ang shogal daki borta shonga na at ang planggana sa shonget daki lorem ipsum keme keme kasi at nang bakit cheapangga intonses na ang ano at ang shonga at nang emena gushung krung-krung sa at nang katagalugan ang dites planggana katagalugan at ang kasi chopopo shonga shonget at nang daki na kasi kasi ng chopopo chopopo ang Cholo shonget at nang ma-kyonget kasi otoko mahogany guash paminta bigalou neuro at Cholo keme shontis at na chopopo nang ma-kyonget shogal klapeypey-klapeypey.
-        </p>
+        <br/>
+        <div class="container">
+            <div class="row text-center">
+                {% for member in members %}
+                    <div class="col-sm">
+                        <img src="{{ filelocation }}{{ member['filename'] }}" alt="{{ member['name'] }}" class="avatar">
+                        <p>{{ member['name'] }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
 

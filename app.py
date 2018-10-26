@@ -4,7 +4,31 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-	return render_template('home.html')
+	members = [
+		{
+			"name": "Alysson Alvaran", 
+			"filename": "alysson.jpg"
+		},
+		{
+			"name": "Paul Gilbert Arroyo", 
+			"filename": "temp.png"
+		},
+		{
+			"name": "Karl Andrew Gatdula", 
+			"filename": "temp.png"
+		},
+		{
+			"name": "Marc Derik Lopez", 
+			"filename": "temp.png"
+		},
+		{
+			"name": "Jose San Buenaventura", 
+			"filename": "temp.png"
+		}
+	]
+	filelocation = "/static/img/members/"
+
+	return render_template('home.html', **locals())
 
 @app.route("/demo/")
 def demo():
