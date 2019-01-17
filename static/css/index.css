@@ -21,6 +21,10 @@ body {
   padding-top:70px;
   padding-bottom:70px;
 }
+  .section.demo {
+    padding-left:calc(15px + 15rem);
+    padding-top:calc(15px + 3rem);
+  }
 .avatar {
   vertical-align: middle;
   width: 150px;

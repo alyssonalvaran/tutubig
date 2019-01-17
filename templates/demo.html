@@ -2,72 +2,42 @@
 
 {% block body %}
 
+<link rel="stylesheet" href="../static/css/demo.css">
+
 <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
     <a class="navbar-brand" href="">
-        <!-- <img src="" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-        Tutubig Demo
+        Tutubig
     </a>
 </nav>
 
-<div class="container-fluid section">
-    <div class="row">
-        <div class="col-6">
-            <h1>Line</h1>
-            <p>A line chart is a way of plotting data points on a line. Often, it is used to show trend data, or the comparison of two data sets.</p>
-        
-            <div>
-                <canvas id="myLineChart"></canvas>
-            </div>
-        </div>
-        <div class="col-6">
-            <h1>Bar</h1>
-            <p>A bar chart provides a way of showing data values represented as vertical bars. It is sometimes used to show trend data, and the comparison of multiple data sets side by side.</p>
-
-            <div>
-                <canvas id="myBarChart"></canvas>
-            </div>
-        </div>
-        <div class="col-6">
-            <h1>Radar</h1>
-            <p>A radar chart is a way of showing multiple data points and the variation between them. They are often useful for comparing the points of two or more different data sets.</p>
-
-            <div>
-                <canvas id="myRadarChart"></canvas>
-            </div>
-        </div>
-        <div class="col-6">
-            <h1>Doughnut & Pie</h1>
-            <p>Pie and doughnut charts are probably the most commonly used charts. They are divided into segments, the arc of each segment shows the proportional value of each piece of data. They are excellent at showing the relational proportions between data.</p>
-
-            <div>
-                <canvas id="myPieChart"></canvas>
-            </div>
-        </div>
-        <div class="col-6">
-            <h1>Polar Area</h1>
-            <p>Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value. This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.</p>
-
-            <div>
-                <canvas id="myPolarAreaChart"></canvas>
-            </div>
-        </div>
-        <div class="col-6">
-            <h1>Bubble</h1>
-            <p>A bubble chart is used to display three dimensions of data at the same time. The location of the bubble is determined by the first two dimensions and the corresponding horizontal and vertical axes. The third dimension is represented by the size of the individual bubbles.</p>
-
-            <div>
-                <canvas id="myBubbleChart"></canvas>
-            </div>
-        </div>
-        <div class="col-6">
-            <h1>Scatter</h1>
-            <p>Scatter charts are based on basic line charts with the x axis changed to a linear axis. To use a scatter chart, data must be passed as objects containing X and Y properties.</p>
-
-            <div>
-                <canvas id="myScatterChart"></canvas>
-            </div>
-        </div>
+<div class="ui inverted left fixed borderless vertical menu" style="padding-top: 42px;">
+    <div style="height: 175px; text-align: center; padding: 14px;">
+        <img class="ui middle aligned circular image" src="http://www.raisonance.com/tzr/scripts/resizer.php?filename=T004/img1/31/57/4sc86th2im4e&mime=image%2Fpng&&originalname=analog_devices_logo.png" style="height: 100px; width: 100px; background: white; margin: 14px;">
+        <div class="text-light" style="font-weight: bold;">Analog Devices, Inc.</div>
     </div>
+    <a class="item">
+        <i class="left briefcase icon"></i>
+        Profile
+    </a>
+    <a class="item">
+        <i class="left chart line icon"></i>
+        Dashboard
+    </a>
+    <a class="item">
+        <i class="left users icon"></i>
+        Accounts
+    </a>
+    <a class="item">
+        <i class="left cogs icon"></i>
+        Settings
+    </a>
 </div>
+
+{% block demo %}{% endblock %}
+
+<script src="//cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.5/all/gauge.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js" integrity="sha256-MZo5XY1Ah7Z2Aui4/alkfeiq3CopMdV/bbkc/Sh41+s=" crossorigin="anonymous"></script>
+
+<script src="../static/js/demo.js"></script>
 
 {% endblock %}
