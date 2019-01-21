@@ -11,6 +11,9 @@
     height: 150px;
     border-radius: 50%;
 }
+.process {
+    width: 75%;
+}
 .footer {
     width: 100%;
     height: 60px;

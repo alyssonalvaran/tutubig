@@ -27,7 +27,29 @@ def home():
 			"filename": "temp.png"
 		}
 	]
-	filelocation = "/static/img/members/"
+	members_filelocation = "/static/img/members/"
+
+	features = [
+		{
+			"name": "Detect problems early", 
+			"filename": "detect-problems-early.png"
+		},
+		{
+			"name": "Boost productivity and efficiency", 
+			"filename": "boost-productivity-and-efficiency.png"
+		},
+		{
+			"name": "Improve survival rate", 
+			"filename": "improve-survival-rate.png"
+		},
+		{
+			"name": "Minimize water exchange", 
+			"filename": "minimize-water-exchange.png"
+		}
+	]
+	features_filelocation = "/static/img/features/"
+
+	process = "/static/img/process.png"
 
 	return render_template('home.html', **locals())
 
